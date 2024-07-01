@@ -8,7 +8,7 @@ const userServices = {
   
 login: async (email, password) => {
     // make a POST request to the login endpoint
-    return await instance.post('/users/login', {
+    return await instance.post('/users/login/', {
         email,
         password
     }, { withCredentials: true });

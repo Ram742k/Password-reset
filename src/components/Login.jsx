@@ -20,7 +20,8 @@ const ForgotPassword = () => {
 
     userServices.login(email, password)
       .then(response => {
-        
+        console.log(response);
+        // Save the JWT token and redirect to the dashboard
         alert('Login successful');
         // Handle successful login
 
